@@ -1,6 +1,7 @@
 "use server-entry";
 
 import { ThemeModeScript } from "flowbite-react";
+import { ThemeInit } from "../.flowbite-react/init";
 import { Welcome } from "./welcome";
 
 import "./client";
@@ -14,6 +15,7 @@ export async function Page() {
         <ThemeModeScript />
       </head>
       <body>
+        <ThemeInit />
         <Welcome />
       </body>
     </html>
